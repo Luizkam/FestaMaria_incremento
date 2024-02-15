@@ -1,0 +1,24 @@
+/* estilização dos botoes */
+button{
+    display: flex;
+    margin: auto;
+    /* margin-top: 50vw; */
+    margin-bottom: 5vw;
+    padding: 2vw;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.511);
+
+}
+button:hover{
+    background-color: rgba(190, 186, 186, 0.471);
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+.btn{
+    margin-top: 15vw;
+}
+.btn_voltar{
+    margin-top: 10vw;
+}

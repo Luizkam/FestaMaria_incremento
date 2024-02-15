@@ -1,0 +1,220 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.cabecalho{
+    display: block;
+    border: 1px solid black;
+    background-color: rgb(169, 196, 196);
+
+}
+.title_festa{
+    display: block;
+    padding: 30px;
+    font-family:  var(--fonte-padrao);
+    font-size: 3em;
+    text-align: center;
+}
+.principal{
+    min-width: 300px;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.41);
+    margin: auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black ;
+    text-align: center;
+    background-color: rgb(169, 196, 196);
+}
+.album{
+    margin: auto;
+    width: 500px;
+}
+img{
+    width: 250px;
+    height: 250px;
+}
+img:hover{
+    width: 255px;
+    height: 255px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.177);
+}
+.descricao{
+    margin: auto;
+}
+.subtitle{
+    text-align: center;
+    font-family:var(--fonte-padrao);
+    font: bold;
+    font-size: 1.5em;
+    
+}
+.subdescricao{
+    margin: auto;
+    text-align: justify;
+    
+    font-size: 1.2em;
+
+    min-width: 300px;
+    max-width: 1000px;
+}
+.vazio{
+    padding: 60px;
+}
+h3{
+    font-size: 1.5em;
+    font-family: var(--fonte-padrao);
+}
+.endereco{
+    margin: auto;
+    text-align: center;
+}
+.rodape{
+    padding: 15px;
+    text-align: center;
+    color: white;
+    background-color: black;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adicionado para garantir que a largura total dos elementos inclua padding e borda */
+}
+
+.cabecalho {
+    display: block;
+    border: 1px solid black;
+    background-color: rgb(169, 196, 196);
+}
+
+.title_festa {
+    display: block;
+    padding: 5vw; /* Alterado para unidade de viewport width para torná-lo responsivo */
+    font-family: var(--fonte-padrao);
+    font-size: 3vw; /* Alterado para unidade de viewport width para torná-lo responsivo */
+    text-align: center;
+}
+
+.principal {
+    width: 90%;
+    margin: auto;
+    /* margin-bottom: 5vw; Alterado para unidade de viewport width para torná-lo responsivo */
+    padding: 5vw; /* Alterado para unidade de viewport width para torná-lo responsivo */
+    padding-bottom: 10vw;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.41);
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgb(169, 196, 196);
+}
+
+.album {
+    margin: auto;
+    max-width: 90%; /* Alterado para porcentagem para torná-lo responsivo */
+}
+
+img {
+    width: 50vw; /* Alterado para unidade de viewport width para torná-lo responsivo */
+    height: auto; /* Alterado para manter a proporção da imagem */
+}
+
+img:hover {
+    width: 51vw; /* Alterado para unidade de viewport width para torná-lo responsivo */
+    box-shadow: 0.5vw 0.5vw rgba(0, 0, 0, 0.177); /* Alterado para unidade de viewport width para torná-lo responsivo */
+}
+
+.descricao {
+    margin: auto;
+}
+
+.subtitle {
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    font-weight: bold; /* Alterado de font para font-weight */
+    font-size: 2vw; /* Alterado para unidade de viewport width para torná-lo responsivo */
+}
+
+.subdescricao {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5vw;
+    font-weight: bold;
+    font-size: 3vw; /* Alterado para unidade de viewport width para torná-lo responsivo */
+    width: 90%; /* Alterado para porcentagem para torná-lo responsivo */
+}
+
+.vazio {
+    padding: 10vw; /* Alterado para unidade de viewport width para torná-lo responsivo */
+}
+
+h3 {
+    font-size: 4vw; /* Alterado para unidade de viewport width para torná-lo responsivo */
+    font-family: var(--fonte-padrao);
+}
+
+.endereco {
+    margin: auto;
+    text-align: center;
+}
+
+.rodape {
+    padding: 3vw; /* Alterado para unidade de viewport width para torná-lo responsivo */
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+/* lista */
+ul.lista{
+    text-align: justify;
+    list-style-type: none;
+    padding-bottom: 20vw;
+}
+li{
+    padding: 1.2%;
+}
+form{
+    border: 1px solid black;
+    padding: 10%;
+}
+input{
+    padding: 2vw;
+}
+input.add{
+    padding: 2vw;
+    margin-top: 10%;
+    border-radius: 7%;
+    background-color: rgba(128, 128, 128, 0.511);
+    color: blue;
+}
+input.add:hover{
+    background-color: rgba(190, 186, 186, 0.471);
+}
+ul.controle_festa{
+    text-align: justify;
+    list-style-type: none;
+    padding-bottom: 5vw;
+}
+form.calcular{
+    text-align: center;
+    margin: 2vw;
+    padding-bottom: 2vw;
+}
+form.calcular label{
+margin-bottom: 2vw;
+}
